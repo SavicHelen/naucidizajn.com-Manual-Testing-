@@ -1,0 +1,109 @@
+**Test Report**
+
+**Project Information**
+**Project name:** Educational website [naucidizajn.com](https://www.naucidizajn.com/) . The site is dedicated to selling mentorship and access to educational courses about web design.
+
+**Team assigned:** QA member Jelena Savić
+
+**Document Overview**
+
+**Scope:**  **Mentorship page**
+The number of Test cases executed: 27
+ The number of passed test cases: 18
+ The number of failed test cases: 9
+ Pass percentage: 66.6%
+ Fail percentage: 33.3%
+
+**Out of scope:**
+Testing payment with real credit card
+
+**Comments:**
+ In the testing process 2 High risk bugs are found (bug 3 and bug 5).
+
+**Defects**
+
+**Total number of bugs: 9**
+
+**Breakdown by severity and priority:** There are 2 bugs with high severity and priority, 1 bug with high severity and medium priority, 3 bugs with medium priority and medium severity. Developers can fix them in the next sprints.The other issues have both low severity and priority.
+
+**Breakdown by functional and non-functional bugs** : There are 3 functional bugs and 6 non-functional bugs which are mostly minor issues.
+
+**Testing executed:**
+Regression: 27 test cases
+ Visual testing: 5 test cases
+
+**Test execution details:
+ Test suits: Regression testing, **** Mentorstvo page**testing
+
+Number of tests by type
+ \*Passed: 18
+ \*Failed: 9
+ \*Skipped:0
+
+**Mentorstvo tab**
+
+Bugs:
+
+| | **Summary** | **Actual result** | **Picture** |
+| --- | --- | --- | --- |
+| **Bug 01** | In the animated graphic the description of the animation isn't visible at the same time the animation is loading, it's displayed lower on the page and looks like they are not related to each other. | While the animation is loading, its description is lower on the page and not visible to the user. It looks like the description and the animation are not related. | ![](RackMultipart20231007-1-p0ch9o_html_22326f91ed097291.png) ![](RackMultipart20231007-1-p0ch9o_html_6f3d51111da47894.png) |
+| **Bug 02** | The description below the animation contains typo mistakes in Posao and in Konstruktivne kritike | The visible text in Posao displays 'Dobijas' instead of 'Dobijaš' and in Konstruktivne kritike 'konsturktivne' instead of 'konstruktivne' | ![](RackMultipart20231007-1-p0ch9o_html_7be9f2b12497eb39.png) ![](RackMultipart20231007-1-p0ch9o_html_e5bf38d42dbf75ef.png) |
+| **Bug 03** | The button Probaj kurs is clickable but the link it leads to isn't working | The button is clicked, and the user is redirected to the blank page, "This site can't be reached" message is displayed.The request is sent. | ![](RackMultipart20231007-1-p0ch9o_html_8a4f53e2203df3d7.png) |
+| **Bug 04** | The description of Grupno in the section Cene Paketa contains typo mistakes | The box Grupno shows "Dodadni izvori znajna" as a part of description of the package | ![](RackMultipart20231007-1-p0ch9o_html_7da8fa9b91fca478.png) |
+| **Bug 05** | While on Mentorstvo page, the user cannot browse through the site by selecting the Vidi Kurseve button. | The user cannot see the requested page,The user is still in Mentorstvo page.The request is sent to the server. |
+ |
+| **Bug 06** | Questionnaire doesn't take 3 minutes to fill out. The user expects to dedicate 3 minutes to it but it actually takes less than 1 minute. | The user can see 3 minutes are estimated to complete the questionnaire. Depending on this information the user might decide whether to complete the questionnaire or not. | ![](RackMultipart20231007-1-p0ch9o_html_63152c3232ba708c.png) |
+| **Bug 07** | Question 2 and question 3 in the questionnaire are literally the same | The user sees that two of four questions are the same so he has the impression his needs aren't well estimated. | ![](RackMultipart20231007-1-p0ch9o_html_b4277eb015b03662.png) ![](RackMultipart20231007-1-p0ch9o_html_26a6c771a3bfd8a.png) |
+| **Bug 08** | If the user opens the questionnaire he can browse through it by clicking the right arrow and eventually get to the recommendation without choosing any answer | The user can see the recommended mentorship program without answering the questions | ![](RackMultipart20231007-1-p0ch9o_html_64ec51857074fafc.png) |
+| **Bug 09** | When the user opens the questionnaire by clicking Popuni upitnik button, he is redirected to the page where he needs to scroll down to see the button for starting the questionnaire | When the user clicks Popuni upitnik, he is redirected to the page where he can see the graphic with needed skills.The button for starting the questionnaire isn't visible right away, the user needs to scroll down to be able to see the button Kreni upitnik. | ![](RackMultipart20231007-1-p0ch9o_html_74c69b04ec9c9924.png) |
+
+**Improvements:**
+
+| **Homepage improvements:** |
+ |
+ |
+| --- | --- | --- |
+| **ID:** | **Current:** | **Requested:** | **Reason:** |
+| Impr H01 | Button Kursevi is not clickable but shows a dropdown menu with multiple clickable features.
+ Button Vidi Kurseve is clickable and leads to the courses section on the homepage, it has no dropdown feature. | The button Kursevi is redundant and it should be removed.
+ Its dropdown feature should be given to the Vidi kurseve button.
+ Vidi kurseve button to be displayed instead of Kursevi button, next to Mentorstvo button. | The user will be able to find the right information on the right button.
+ That way, the user will be able to see the dropdown menu when hovering
+ and will be able to see the courses section on the homepage when clicking the Vidi kurseve button. |
+| Impr H02 | Button Kursevi is not clickable but shows a dropdown menu with multiple clickable features sectioned in two columns Kursevi and Paketi.
+ So the information about packages is not easily accessible nor in the place it is expected to be. | The dropdown menu below the Vidi kurseve button should be showing only courses.
+ Add the Paketi button in the headline. Paketi button to be clickable and lead to packages section on the homepage when clicked.
+ Also, Paketi button to show dropdown feature with packages menu when hovered. | This way the name of the button will justify the information shown when hovered.
+ The user will be clear with what courses he can buy on the page.
+ The information about packages will be given in a clear and concise way, in the place the user expects it to be displayed. |
+| Impr H03 | The user can find the Blog section lower on the page and the same section is linked in the footer of the homepage. | Blog section should be added in the headline as a clickable button. After clicking it should redirect to the Blog section. | This way the Blog section will be more visible and the content on the page will seem to be well structured and organized. |
+| Impr H04 | In the Homepage, in the section Program mentorstva, after the title there's a text:
+ "Tu sam da ti prenesem svo svoje znanje i iskustvo, i da te ispratim na putu do posla u firmi ili prvog freelance klijenta."
+ The same text is in the section Slack grupa in the same page. | Change the text in the section Slack grupa. | The displayed text doesn't show the real purpose of the slack group and is more appropriate for the Mentorstvo section. |
+| **Blog section improvement:** |
+ |
+ |
+| **ID:** | **Current:** | **Requested:** | **Reason:** |
+| Impr B01 | If the user is about to see the green arrows in the Blog section, he is not able to see the full titles of the blog posts he's browsing through.
+ The user needs to scroll down to see the title of the post, and scroll back to see the arrow to move to the next text. | Remove the arrows left/right in the section title.
+ Add left and right arrows on the blog pictures line. (carrousel field)
+ Remove drag/drop tool. | The arrows are not easy to use because the user needs to scroll up and down to see the arrows and the titles of the posts.
+ Arrows in the carousel field is a user-friendly way of going through the blog post titles. |
+| Impr B02 | Below the title of the blog post there is the Pročitaj button.
+ The Pročitaj button is clickable as well as the title of the post, as well as the picture of the post. | Remove Pročitaj button. | Pročitaj button is not necessary given the fact that clicking on the title and clicking on the picture of the post are leading to the wanted text.
+ Also, the Pročitaj button makes the whole carousel look more robust and the buttons aren't visible if not scrolled down enough. |
+| **Web Dizajn Page improvements:** |
+| **ID:** | **Current:** | **Requested:** | **Reason:** |
+| Impr WD01 | In the section O predavaču in the page Web Dizajn kurs,
+ the follow-up text for predavač Voja is the same as for the predavač Nikola. | Adjust the text to the lecturer's personality and features. | Two mentors should be described in different words, it gives them more credibility in the eyes of the customer. |
+
+**Recommendations:**
+In the next sprint the focus should be on page Mentorstvo. This is the page where the most bugs are found and which can be improved by fixing the mentioned defects. That will lead to enhancement of the user experience and standing out from the competition.
+
+**Test environment:
+ Devices:** HP 250 G7 Notebook PC
+ **Tools:** Chrome DevTools
+
+**Exit criteria:**
+
+There are no blockers in this version. Current bugs can be fixed in the following sprints.
